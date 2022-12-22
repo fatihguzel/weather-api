@@ -1,0 +1,36 @@
+.container {
+  text-align: center;
+  margin-top: 10%;
+  border: 3px #607d8b;
+  border-style: groove solid ridge;
+  border-width: 20px;
+}
+
+.city {
+  font-size: 4rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: yellow;
+}
+
+.description {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.minmax {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.term {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.button {
+  width: 80px;
+  background-color: #64b5f6;
+  color: #000000;
+  margin-bottom: 15px;
+  font-size: larger;
+}
