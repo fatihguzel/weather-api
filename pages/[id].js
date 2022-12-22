@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 const index = ({ id, weather }) => {
   const router = useRouter();
 
-  console.log(weather);
+  console.log(weather.weather.icon);
   // Description - Havanın durumu
   // sys.country - Ülke adı
   // name - Şehir Adı
@@ -14,12 +14,17 @@ const index = ({ id, weather }) => {
     <div>
       <div className={`container ${styles.container}`}>
         <label htmlFor="city" className={`${styles.city}`}>
-          {id}
+          {id} <hr />{" "}
+          <img
+            className={styles.icons}
+            src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
+            alt=""
+          />
         </label>
 
         <ul class="list-group">
           <p class={`list-group-item ${styles.description}`}>
-            {weather.weather[0].description}
+            {weather.weather[0].description}{" "}
           </p>
 
           <p class={`list-group-item ${styles.term}`}>
